@@ -1,0 +1,382 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/combinat.js"></script>
+</head>
+<body>
+	 <?php
+ 		 if (isset($_GET['done'])) {
+  			header('Location: thanks.php');
+ 		 } else {}
+ 	 ?>
+	 <div id="wrapper">
+		<header>
+			<div class="container">
+				<a href="index.html"><img src="images/logo.png" class="logo"></a>
+				<ul class="topnav" id="myTopnav">
+					<li><a href="#ninth-section">Заказать</a></li>
+					<li><a href="#third-section">Как работает</a></li>
+					<li><a href="#seventh-section">Преимущества</a></li>
+					<li><a href="#fourth-section">Куда применять</a></li>
+					<li><a href="#sixth-section">Способ применения</a></li>
+					<li><a href="#eighth-section">Отзывы</a></li>
+					<li class="icon">
+    					<a href="javascript:void(0);" onclick="myFunction()" id="myTopnav">&#9776;</a>
+  					</li>
+				</ul>
+			</div>
+		</header>
+		<div id="first-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7" id="first-section-content">
+						<div class="main-title row-centered">
+							<h3>Нанопокрытие для стекла</h3>
+							<h1>NanoForce</h1><br>
+						</div>
+						<div class="second-man-title row-centered">
+							<h1>Дворники</h1>
+							<h1>Практически</h1>
+							<h1>Не Нужны</h1>		
+						</div>
+					</div>			
+					<div class="col-md-5" >
+						<div class="form-title row-centered">
+							<h3>Цена: <span>1990</span> руб.</h3>
+							<h5>Старая цена: <span>2998</span> руб.</h5>		
+						</div>
+						<form action="" method="post">
+							<div class="form text-center">
+							<h3 class="text-transform">Заполните заявку</h3>
+							<h5>и мы перезвоним Вам в течение 15 минут</h5>
+							<p>для уточнения всех подробностей!</p>
+							<input type="hidden" name="comb_goods_amount" value="1" id="comb_goods_amount">
+							<input type="hidden" name="comb_cookie_hash" value="">
+							<input type="hidden" name="comb_get_hash" id="comb_get_hash" value="<?php echo (!empty($_GET['hash']) ? $_GET['hash'] : ''); ?>">
+							<input type="hidden" name="comb_user_data" id="comb_user_data" value="">
+							<div class="form-group">
+						    	<div class="form-group input-group-lg">
+ 									<select class="form-control" id="sel1">
+									    <option>Россия</option>
+									    <option>Белоруссия</option>
+									</select>
+								</div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="form-group input-group-lg">
+		  							<input type="text" name="comb_fio" class="form-control" placeholder="ФИО" aria-describedby="sizing-addon1">
+								</div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="form-group input-group-lg">
+		  							<input type="text" name="comb_client_phone" class="form-control" placeholder="Телефон" aria-describedby="sizing-addon1" required>
+								</div>
+						    </div>
+						    <div class="form-group">
+								<input type="submit" value="Заказать" class="btn btn-success btn-lg seventh-btn">	
+							</div>
+						</div>
+						</form>
+						
+						
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div id="second-section">
+			<div class="container">
+				<h1 class="title title-padding title-2n">Эффективная <span>защита</span></h1>
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 col-xs-12 rd">
+						<div class="greenback">
+							<img src="images/second-section-icon-1.png" class="section-icon">
+						</div>
+						<p class="images-bottom-text text-transform">Дождь</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="greenborder">
+							<img src="images/second-section-icon-2.png" class="section-icon">
+						</div>
+						<p class="images-bottom-text text-transform">Грязь</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="greenborder">
+							<img src="images/second-section-icon-3.png" class="section-icon">
+						</div>
+						<p class="images-bottom-text text-transform">Снег</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="greenborder">
+							<img src="images/second-section-icon-4.png" class="section-icon" >
+						</div>
+						<p class="images-bottom-text text-transform">Пыль</p>
+					</div>
+				</div><br><br>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="third-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12 row-centered">
+						<img src="images/third-section-img-1.png" alt="">
+						<div class="row">
+							<img src="images/third-section-img-2.png">		
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-6 col-xs-12">
+						<h1 class="title title-padding third-title row-centered">Как <span>Работает</span></h1>
+						<div class="description" style="float: left;">
+							<p>Нанопокрытие <span>для любых стекол </span> в виде спрея.</p><br>
+							<p>Действует, заполняя микропоры и микротрещины стекла, образуя невидимую пленку.</p><br>
+							<p>Дождь и грязь скатываются с обработанной поверхности, поверхность дольше <span>остается чистой</span>, при скорости движения от 80 км/ч.</p>	
+						</div>
+					</div>
+				</div><br><br>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fourth-section">
+			<div class="container">
+				<h1 class="title title-padding title-2n">Куда <span>применять</span></h1>
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 col-xs-12 ">
+						<img src="images/fourth-section-img-1.png">
+						<p class="images-bottom-text text-transform">Лобовое стекло</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="images/fourth-section-img-2.png" style="padding-bottom: 7px;">
+						<p class="images-bottom-text text-transform">Боковые стекла</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<img src="images/fourth-section-img-3.png">
+						<p class="images-bottom-text text-transform">Фары</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+					    <img src="images/fourth-section-img-4.png">
+						<p class="images-bottom-text text-transform">Зеркала</p>
+					</div>
+				</div><br><br>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="fifth-section">
+			<div class="container">
+				<h1 class="title title-padding title-2n">Это реально <span>работает</span></h1>
+				<div class="row text-center">
+					<div class="col-md-12 col-xs-12 col-sm-12">
+						<div class="description">
+							<p>Нано покрытие для стекол <span>Nano Force</span> от Grass</p><br>
+						</div>
+					</div>	
+				</div> 
+			</div>
+			<div class="row text-center">
+					<img src="images/fifth-section-img.png" class="fifth-section-img">
+			</div>
+			<div class="row text-center">
+				<div class="col-md-12">
+					<img src="images/slider.png">	
+				</div>
+			</div>
+		</div>
+		<div id="sixth-section">
+			<div class="container">
+				<h1 class="title title-padding title-2n">Cпособ <span>применения</span></h1>
+				<div class="row text-center">
+					<div class="col-md-12 col-xs-12 col-sm-12">
+						<div class="description">
+							<p>Нанопокрытие для стекла <span>NanoForce</span> использовать о чень просто!</p><br>
+						</div>
+					</div>	
+				</div> 
+				<div class="row text-center">
+					<div class="col-md-4 col-xs-12 col-sm-12">
+						<div class="greenback">
+							<img src="images/sixth-section-icon-1.png" class="section-icon">
+						</div>
+						<p class="images-bottom-text">Тщательно очистить от грязи и высушить
+стекло</p>
+					</div>
+					<div class="col-md-4 col-xs-12 col-sm-12">
+						<div class="greenback">
+							<img src="images/sixth-section-icon-2.png" class="section-icon">
+						</div>
+						<p class="images-bottom-text">Распылить средство и равномерно распредлеить
+по стеклу губкой</p>
+					</div>
+					<div class="col-md-4 col-xs-12 col-sm-12">
+						<div class="greenborder">
+							<img src="images/sixth-section-icon-3.png" class="section-icon" >
+						</div>
+						<p class="images-bottom-text">Отполировать стекло бумажным полотенцем или микрофиброй</p>
+					</div>
+				</div><br><br>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="seventh-section">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-12 title-padding seventh-title">
+						<h1 class="title"><span>Улучшает</span> обзор при вождении</h1>
+						<h1 class="title"><span>Снижает</span> износ дворников</h1>
+						<h1 class="title"><span>Уменьшает</span> утомляемость водителя</h1>
+						<h1 class="title"><span>Защищает</span> стекло от вредной химии</h1>
+					</div>
+				</div>
+				<form action="" method="post">
+					<div class="row text-center">
+						<input type="hidden" name="comb_goods_amount" value="1" id="comb_goods_amount">
+						<input type="hidden" name="comb_cookie_hash" value="">
+						<input type="hidden" name="comb_get_hash" id="comb_get_hash" value="<?php echo (!empty($_GET['hash']) ? $_GET['hash'] : ''); ?>">
+						<input type="hidden" name="comb_user_data" id="comb_user_data" value="">
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="form-group input-group-lg">
+								<input type="text" name="comb_fio" class="form-control" placeholder="ФИО" aria-describedby="sizing-addon1">
+							</div>
+					   	</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="form-group input-group-lg">
+	  							<input type="text" name="comb_client_phone" class="form-control" placeholder="Телефон" aria-describedby="sizing-addon1" required>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="form-group">
+								<input type="submit" value="Заказать" class="btn btn-success btn-lg seventh-btn">	
+							</div>
+						</div>
+					</div>
+				</form>
+				<br><br>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="eighth-section">
+			<div class="container">
+				<h1 class="title title-padding title-2n">Отзывы <span>покупателей</span></h1>
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="images/eighth-section-img-1.png" alt="">
+						<p class="names-bottom-text"><span>Василий</span>, 31 год</p>
+						<p class="images-bottom-text">Cтекла дольше остаются в чистом состоянии, грязь и пыль скатываются. На стекле не остается видимых следов - помутнения, жирного блеска, разводов.</p>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="images/eigth-section-img-2.png" alt="">
+						<p class="names-bottom-text"><span>Николай</span>, 27 лет</p>
+						<p class="images-bottom-text">Боковые и заднее стекло хватает до полугода, а лобовое, нужно смотреть по эффективности свойств: как скользят дворники, как скатывается вода. </p>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="images/eighth-section-img-3.png">
+						<p class="names-bottom-text"><span>Мария</span>, 20 лет</p>
+						<p class="images-bottom-text">Я раз в два месяца наношу для стойкого эффекта, думаю, что можно реже, все очень индивидуально. Расход средства маленький.</p>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-12">
+						<img src="images/slider.png">	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ninth-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+					<div class="main-title row-centered">
+						<h3>Нанопокрытие для стекла</h3>
+						<h1>NanoForce</h1><br>
+					</div>
+					<div class="form-title row-centered">
+						<h3>Цена: <span>1990</span> руб.</h3>
+						<h5>Старая цена: <span>2998</span> руб.</h5>		
+					</div><br>
+					<div class="nith-text row-centered">
+						<h1 class="text-transform">Акция! <span class="discount-text">Скидка 50%</span></h1>
+						<p>До конца дня с такой скидкой осталось упаковок <span class="nith-span">11</span
+						></p><br>
+					</div>
+				</div>
+				<form action="" method="post">
+					<div class="col-md-4 text-center form">
+						<h3 class="text-transform">Заполните заявку</h3>
+						<h5 class="">и мы перезвоним Вам в течение 15 минут</h5>
+						<p>для уточнения всех подробностей</p>
+						<input type="hidden" name="comb_goods_amount" value="1" id="comb_goods_amount">
+						<input type="hidden" name="comb_cookie_hash" value="">
+						<input type="hidden" name="comb_get_hash" id="comb_get_hash" value="<?php echo (!empty($_GET['hash']) ? $_GET['hash'] : ''); ?>">
+						<input type="hidden" name="comb_user_data" id="comb_user_data" value="">
+						<div class="form-group">
+					    	<div class="form-group input-group-lg">
+	 							<select class="form-control" id="sel1">
+									<option>Россия</option>
+									<option>Белоруссия</option>
+								</select>
+							</div>
+						</div>
+					    <div class="form-group">
+					    	<div class="form-group input-group-lg">
+	  							<input type="text" class="form-control" name="comb_fio" placeholder="ФИО" aria-describedby="sizing-addon1">
+							</div>
+					    </div>
+					    <div class="form-group">
+					    	<div class="form-group input-group-lg">
+	  							<input type="text" class="form-control" name="comb_client_phone"  placeholder="Телефон" aria-describedby="sizing-addon1" required>
+							</div>
+					    </div>
+					    <div class="form-group">
+								<input type="submit" value="Заказать" class="btn btn-success btn-lg seventh-btn">	
+						</div>
+					</div>
+				</form>
+					
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			<div class="footer-below">
+	            <div class="container">
+	                <div class="row text-center">
+	                    <div class="col-lg-12">
+	                        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+						</div><br><br><br>
+						<div class="col-lg-12">
+							<p><a href="conf.pdf" class="footer-text">Политика конфиденциальности</a></p>
+						</div>
+	                </div>
+	            </div>
+        	</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

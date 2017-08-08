@@ -1,0 +1,302 @@
+@font-face {
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-family: OpenSans-Bold; }
+
+@font-face {
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: OpenSans-Regular; }
+
+@font-face {
+  src: url(../fonts/OpenSans-Semibold.ttf);
+  font-family: OpenSans-Semibold; }
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden; }
+
+html {
+  overflow-y: scroll; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+header {
+  padding: 20px 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+header img {
+  float: left; }
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+  font-family: OpenSans-Regular; }
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: left;
+  text-transform: uppercase; }
+
+ul.topnav li:nth-child(6) {
+  border-right: none; }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #292929;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px; }
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  border-bottom: 3px #1ea22d solid;
+  cursor: pointer; }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+  display: none; }
+
+.glyphicon-menu-hamburger {
+  color: #fff; }
+
+#first-section {
+  background: url(../images/first-section.png) no-repeat;
+  background-size: cover;
+  padding: 120px 0; }
+
+.main-title {
+  font-family: OpenSans-Bold;
+  text-transform: uppercase; }
+  .main-title h3 {
+    color: #191919;
+    font-size: 45px; }
+  .main-title h1 {
+    color: #1ea22d;
+    font-size: 70px; }
+
+.second-man-title {
+  padding-top: 30px;
+  font-family: OpenSans-Bold;
+  text-transform: uppercase; }
+  .second-man-title h1:nth-child(2n+1) {
+    color: #5e5e54;
+    font-size: 70px; }
+  .second-man-title h1:nth-child(2n) {
+    color: #dddcd2;
+    font-size: 70px; }
+
+.form-title h3 {
+  color: #292929;
+  font-size: 40px;
+  font-family: OpenSans-Regular; }
+
+.form-title h3 span {
+  color: #1ea22d;
+  font-family: OpenSans-Bold; }
+
+.form-title h5 {
+  color: #7c7c7c;
+  font-family: OpenSans-Regular;
+  font-size: 20px; }
+
+.form-title h5 span {
+  color: #7c7c7c;
+  font-family: OpenSans-Bold;
+  text-decoration: line-through; }
+
+#second-section {
+  padding: 60px 0; }
+
+.greenback {
+  background: url("../images/second-section-backgreen.svg") no-repeat center;
+  z-index: -1;
+  height: 150px; }
+
+.greenborder {
+  background: url("../images/second-section-bordergreen.svg") no-repeat center;
+  z-index: -1;
+  height: 150px;
+  text-align: center; }
+
+.section-icon {
+  padding-top: 3em; }
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font: 35px OpenSans-Regular;
+  color: #292929;
+  position: relative; }
+
+.title-2n:after {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  width: 10%;
+  border: 1px solid #000;
+  content: ""; }
+
+.title-padding {
+  padding-bottom: 45px; }
+
+.title span {
+  color: #1ea22d;
+  font-family: OpenSans-Semibold; }
+
+.images-bottom-text {
+  font: 25px OpenSans-Regular;
+  padding: 35px 0;
+  color: #292929;
+  position: relative; }
+
+.names-bottom-text {
+  font: 25px OpenSans-Regular;
+  padding: 15px 0;
+  color: #292929;
+  position: relative; }
+
+.names-bottom-text span {
+  color: #1ea22d; }
+
+.images-bottom-text:after {
+  position: absolute;
+  top: 95%;
+  left: 25%;
+  width: 50%;
+  border-bottom: 1px solid #000;
+  content: ""; }
+
+.text-transform {
+  text-transform: uppercase; }
+
+#third-section {
+  padding: 60px 0;
+  margin: 50px 0;
+  background: url("../images/third-section.png") no-repeat center;
+  background-size: cover; }
+
+.third-title {
+  float: left; }
+
+.description {
+  font: 20px OpenSans-Regular;
+  color: #292929; }
+
+.description span {
+  color: #1ea22d;
+  font-family: OpenSans-Semibold; }
+
+#fourth-section {
+  padding: 60px 0; }
+
+#fifth-section {
+  padding: 60px 0;
+  background: #eeeeee; }
+
+.fifth-section-img {
+  border: 15px solid white;
+  margin: 20px 0;
+  display: inline-block;
+  height: auto;
+  max-width: 100%; }
+
+#sixth-section {
+  padding: 60px 0; }
+
+#seventh-section {
+  padding: 100px 0;
+  background: url("../images/seventh-section.png") no-repeat center;
+  background-size: cover; }
+
+.seventh-btn {
+  padding: 10px 100px; }
+
+.seventh-title {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+.seventh-title h1:nth-child(2n) {
+  color: #626262;
+  font-family: OpenSans-Semibold; }
+
+.seventh-title h1:nth-child(2n+1) {
+  font-family: OpenSans-Semibold; }
+
+#eighth-section {
+  padding: 60px 0; }
+
+#ninth-section {
+  padding: 100px 0;
+  background: url("../images/ninth-section.png") no-repeat center;
+  background-size: cover; }
+
+.nith-text h1 {
+  font: 50px OpenSans-Regular;
+  color: #383838; }
+
+.nith-text h3 {
+  font: 25px OpenSans-Regular;
+  color: #292929;
+  line-height: 0.1; }
+
+.nith-span {
+  background-color: #1ea22d;
+  color: #fff;
+  padding: 10px; }
+
+.nith-text p {
+  font-size: 25px;
+  color: #292929;
+  font-family: OpenSans-Regular; }
+
+.discount-text {
+  color: #7c7c7c; }
+
+.form {
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #626262; }
+
+.btn-success {
+  background-color: #1ea22d; }
+
+.input-group-lg {
+  border: 2px solid #626262; }
+
+.form h3 {
+  color: #1ea22d;
+  font-family: OpenSans-Regular; }
+
+.form h5 {
+  color: #383838;
+  font-family: OpenSans-Regular;
+  font-size: 20px; }
+
+.form p {
+  color: #383838;
+  font-family: OpenSans-Regular;
+  font-size: 15px; }
+
+footer .footer-below {
+  padding: 45px 0;
+  background: #eeeeee; }
+
+.footer-text {
+  color: #383838;
+  font: 20px OpenSans-Regular; }
